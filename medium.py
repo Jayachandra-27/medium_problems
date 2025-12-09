@@ -91,23 +91,24 @@
 
 # Write a program that takes array of numbers are input,
 # print the second duplicate number and it’s occurrence.
-a= [ 64, 1, 2, 7, 79, 7, 7, 1, 22]
-l={}
-for i in a:
-    if i not in l:
-        l[i]=1
-    else:
-        l[i]+=1
+# a= [ 64, 1, 2, 7, 79, 7, 7, 1, 22]
+# l={}
+# for i in a:
+#     if i not in l:
+#         l[i]=1
+#     else:
+#         l[i]+=1
 
 
-r={}
-for k,v in l.items():
-    if v>=2:
-        r[k]=v
+# r={}
+# for k,v in l.items():
+#     if v>=2:
+#         r[k]=v
 
-k_list=list(r.keys())
+# k_list=list(r.keys())
 
-print(k_list)
-# if len(k_list)>=2:
-print(f'Second duplicate number is {k_list[1]} and it is occurred {r[k_list[1]]} times')
+# print(k_list)
+# # if len(k_list)>=2:
+# print(f'Second duplicate number is {k_list[1]} and it is occurred {r[k_list[1]]} times')
 
+hello
