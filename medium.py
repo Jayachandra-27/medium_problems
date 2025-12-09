@@ -141,6 +141,73 @@ r={}
 
 # print(l)
 
+# Find Missing Number
+# l=[1, 2, 4, 5]
+# m=max(l)
+# for i in range(min(l),max(l)):
+#     if i not in l:
+#         print(i)
+# else:
+#     print(max(l)+1)
+
+#Find the Maximum Product of Two Elements
 
 
 
+
+
+# Write a function to find all pairs in an array whose 
+# sum is equal to a given target.
+# l=[2, 4, 3, 5, 7, 8, 9]
+# t=7
+# p=[]
+# seen=set()
+# for i in l:
+#     s=t-i
+#     if s in seen:
+#         p.append([s,i])
+#     seen.add(i)
+
+# print(sorted(p))
+
+
+
+# Find Peak Element
+
+# Problem: Write a function to find a peak element in an array. 
+# An element is a peak if it is not smaller than its neighbours.
+
+
+# def p1(l):
+#     for i in range(len(l)):
+#         if i==0:
+#             if l[i]>l[i+1]:
+#                 return l[i]
+#         if i>=1 and i<len(l)-1:
+#             if l[i]>l[i+1] and l[i]>l[i-1]:
+#                 return l[i]
+#         if i==len(l)-1:
+#             if l[i]>l[i-1]:
+#                 return l[i]
+
+# print(p1([1, 1, 2, 1, 1, 2]))
+
+
+# Check for Anagrams
+s = "listen"
+t = "nagartm"
+is_ana=True
+if len(s)==len(t):
+    for i in s:
+        if i not in t:
+            is_ana=False
+            break
+    
+    for i in t:
+        if i not in s:
+            is_ana=False
+            break
+    
+    
+        
+print(is_ana)
