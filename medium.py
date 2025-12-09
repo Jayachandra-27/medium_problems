@@ -110,3 +110,37 @@ r={}
 # print(k_list)
 # # if len(k_list)>=2:
 # print(f'Second duplicate number is {k_list[1]} and it is occurred {r[k_list[1]]} times')
+
+
+# ARRAY BASED QUESTIONS
+# Write a function that rotates an array to the right by a
+# given number of steps.
+
+
+# def rotate(nums, k):
+#         l2=nums[:]
+#         s=k%len(nums)
+#         newl=len(nums)-s
+#         for i in range(newl-1,-1,-1):
+#             nums[i+s]=l2[i]
+#         for i in range(s):
+#             nums[i]=l2[newl+i]
+#         return nums
+    
+# nums = [1,2,3,4,5,6,7]
+# k = 3
+# print(rotate(nums,k))
+
+# Intersection of Two Arrays
+# l1=[1, 2, 3]
+# l2=[2, 3, 4]
+# l=[]
+# for i in l1:
+#     if i in l2:
+#         l.append(i)
+
+# print(l)
+
+
+
+
