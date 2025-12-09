@@ -110,11 +110,3 @@ r={}
 # print(k_list)
 # # if len(k_list)>=2:
 # print(f'Second duplicate number is {k_list[1]} and it is occurred {r[k_list[1]]} times')
-
-keys_list = list(r.keys())
-
-if len(keys_list) >= 2:
-    print("Second duplicate number:", keys_list[1])
-    print("Occurrence:", r[keys_list[1]])
-else:
-    print("Second duplicate not found")
