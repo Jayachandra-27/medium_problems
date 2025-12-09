@@ -194,20 +194,20 @@ r={}
 
 
 # Check for Anagrams
-s = "listen"
-t = "nagartm"
-is_ana=True
-if len(s)==len(t):
-    for i in s:
-        if i not in t:
-            is_ana=False
-            break
+# s = "listen"
+# t = "nagartm"
+# is_ana=True
+# if len(s)==len(t):
+#     for i in s:
+#         if i not in t:
+#             is_ana=False
+#             break
     
-    for i in t:
-        if i not in s:
-            is_ana=False
-            break
+#     for i in t:
+#         if i not in s:
+#             is_ana=False
+#             break
     
     
         
-print(is_ana)
+# print(is_ana)
