@@ -194,20 +194,54 @@ r={}
 
 
 # Check for Anagrams
-# s = "listen"
-# t = "nagartm"
-# is_ana=True
-# if len(s)==len(t):
-#     for i in s:
-#         if i not in t:
-#             is_ana=False
-#             break
+# s = "anagram"
+# t = "nagaram"
+# seen={}
+# if len(s)!=len(t):
+#     print(False)
+# for i in s:
+#     if i in seen:
+#         seen[i]+=1
+#     else:
+#         seen[i]=1
+# # print(seen)
+
+# for i in t:
     
-#     for i in t:
-#         if i not in s:
-#             is_ana=False
-#             break
-    
-    
+#     if i not in seen:
         
-# print(is_ana)
+#         seen[i]-=1
+# # print(seen)
+
+# for val in seen.values():
+#     if val!=0:
+#         print(False)
+
+# print(True)
+
+
+# for i in range(1,3):
+#     for j in range(1,3):
+#         print(j,end=' ')
+#     print( )
+
+
+# arr = [-1, 0, 1, 2, -1, -4]
+# seen=set()
+# r=set()
+
+# for i in arr:
+#     req=-i
+#     if req in seen:
+#         a=min(req,i)
+#         b=max(req,i)
+#         r.add((a,b))
+#     seen.add(i)
+# print(r)
+
+
+
+r={(-1, 1)}
+print(sorted(r))
+
+
