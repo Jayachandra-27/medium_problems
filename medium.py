@@ -226,7 +226,7 @@ r={}
 #     print( )
 
 
-# arr = [-1, 0, 1, 2, -1, -4]
+# arr = [6, 1, 8, 0, 4, -9, -1, -10, -6, -5]
 # seen=set()
 # r=set()
 
@@ -235,13 +235,40 @@ r={}
 #     if req in seen:
 #         a=min(req,i)
 #         b=max(req,i)
-#         r.add((a,b))
+#         if (b,a) not in seen:
+#             r.add((a,b))
+#         # r.add((a,b))
 #     seen.add(i)
-# print(r)
+# l=[]
+# for i in r:
+#     l.append(list(i))
+# print(l)
 
 
 
-r={(-1, 1)}
-print(sorted(r))
+
+# r={(-1, 1)}
+# print(sorted(r))
+
+# l=[(2,3),(4,6)]
+# if (2,3) not in l:
+#     l.append((2,3))
+# print
+
+# flatten array
+
+
+r=[]
+def flat(l):
+    
+    for i in l:
+        if type(i)==int:
+            r.append(i)
+        else:
+            flat(i)
+k=flat([[1,1],2,[1,1]])
+print(r)
+
+
 
 
