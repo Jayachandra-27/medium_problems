@@ -258,16 +258,53 @@ r={}
 # flatten array
 
 
-r=[]
-def flat(l):
+# r=[]
+# def flat(l):
     
-    for i in l:
-        if type(i)==int:
-            r.append(i)
+#     for i in l:
+#         if type(i)==int:
+#             r.append(i)
+#         else:
+#             flat(i)
+# k=flat([[1,1],2,[1,1]])
+# print(r)
+# arr = [2, 3, 2, 3, 5]
+# seen={}
+# for i in arr:
+#     if i not in seen:
+#         seen[i]=1
+#     else:
+#         seen[i]+=1
+        
+# for i in range(1,len(arr)+1):
+#     if i not in seen:
+#         seen[i]=0
+
+# f=sorted(seen.items())
+# l2=[]
+# for i in f:
+#     l2.append(i[1])
+# print(l2)
+
+
+arr = [1, 1, 2, 2, 2, 2, 3]
+target = 4
+seen={}
+for i in arr:
+    if i==target:
+        if i not in seen:
+            seen[i]=1
         else:
-            flat(i)
-k=flat([[1,1],2,[1,1]])
-print(r)
+            seen[i]+=1
+
+if seen:
+    print(seen[target])
+else:
+
+    print('0')
+
+
+
 
 
 
